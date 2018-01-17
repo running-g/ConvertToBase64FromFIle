@@ -32,5 +32,11 @@ namespace ConvertToBase64
                 MessageBox.Show("出现异常");
             }
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            this.openFileDialog1.InitialDirectory = Application.StartupPath;
+            this.openFileDialog1.FileName="test.amr";
+        }
     }
 }
